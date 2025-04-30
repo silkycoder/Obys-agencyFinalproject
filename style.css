@@ -10,6 +10,18 @@ html,body{
     width: 100%;
     height: 100%;
 }
+#crsr{
+        height: 2vw;
+        width: 2vw;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.649);
+        position: fixed;
+        z-index: 999;
+        mix-blend-mode: difference;
+        transform: translate(-50%,-50%);
+        
+}
+
 #loader{
     height: 100%;
     width: 100%;
@@ -94,5 +106,47 @@ html,body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5.5vw;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 3vw;
+}
+#nav-part2 h4{
+    /* font-size: 1vw; */
+    font-family: plain light;
+    font-weight: 400;
+}
+.hero{
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 28%;
+    height: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    font-weight: 500;
+}
+.hero:nth-child(2){
+    margin-top: 16vh;
+}
+.hero h1,h2,h3{
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 7.5vw;
 }
 
